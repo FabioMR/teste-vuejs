@@ -1,0 +1,33 @@
+.sidenav {
+  @extend .bg-primary;
+  @extend .pt-3;
+  @extend .pr-0;
+
+  height: calc(100vh - 56px);
+  overflow-y: scroll;
+  max-width: 56px;
+
+  @include media-breakpoint-up(md) {
+    max-width: 270px;
+  }
+
+  .list-group-item {
+    @extend .bg-transparent;
+    @extend .text-uppercase;
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .border-0;
+
+    color: theme-color("light");
+    height: 48px;
+
+    &:hover {
+      color: $white;
+    }
+
+    &.router-link-active {
+      @extend .text-secondary;
+      @extend .rounded-0;
+    }
+  }
+}

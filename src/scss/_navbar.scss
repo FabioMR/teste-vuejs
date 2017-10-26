@@ -1,0 +1,34 @@
+.navbar {
+  @extend .navbar-light;
+  @extend .bg-light;
+
+  margin-right: ($grid-gutter-width / -2);
+  margin-left:  ($grid-gutter-width / -2);
+  height: 46px;
+
+  @include media-breakpoint-up(md) {
+    height: 56px;
+  }
+
+  .navbar-brand {
+    @extend .bg-secondary;
+    @extend .text-white;
+    @extend .text-center;
+    width: 56px;
+    margin-left: -16px;
+    line-height: 36px;
+    padding-top: 8px;
+
+    @include media-breakpoint-up(md) {
+      height: 56px;
+      width: 270px;
+    }
+  }
+
+  .navbar-text {
+    @extend .text-secondary;
+    @extend .text-uppercase;
+    @extend .mb-0;
+    font-size: inherit;
+  }
+}
