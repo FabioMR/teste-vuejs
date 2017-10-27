@@ -1,8 +1,8 @@
 @import "src/scss/bootstrap/custom.scss";
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
-@import "src/scss/_svgicon.scss";
-
-@import "src/scss/_navbar.scss";
-@import "src/scss/_sidenav.scss";
-@import "src/scss/_wrapper.scss";
+@import "src/scss/partials/_svgicon.scss";
+@import "src/scss/partials/_navbar.scss";
+@import "src/scss/partials/_sidenav.scss";
+@import "src/scss/partials/_wrapper.scss";
+@import "src/scss/partials/_btn-loader.scss";

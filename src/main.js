@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import router from './router'
 
+import API from './api';
+global.API = API
+
 import LoginLayout from './layouts/Login'
 Vue.component('login-layout', LoginLayout)
 

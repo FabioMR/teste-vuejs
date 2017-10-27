@@ -6,7 +6,7 @@
 
     <div class="dropdown show ml-auto">
       <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" role="button">
-        admin@admin.com.br
+        {{ currentUser.email }}
       </a>
 
       <div class="dropdown-menu">
@@ -22,8 +22,13 @@
 
   export default {
     props: ['title'],
+    data() {
+      return {
+        currentUser: Auth.currentUser(),
+      }
+    },
     methods: {
-      logout () {
+      logout() {
         Auth.logout()
         this.$router.replace({ name: 'SessionNew' })
       }

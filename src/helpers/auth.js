@@ -1,11 +1,19 @@
 export default {
-  loggedIn: () => {
+  loggedIn() {
     return !!localStorage.token
   },
-  login: (token) => {
+  login(user, token) {
+    localStorage.setItem('currentUser', JSON.stringify(user))
     localStorage.token = token
   },
-  logout: () => {
+  logout() {
+    localStorage.currentUser = ''
     localStorage.token = ''
+  },
+  currentUser() {
+    return JSON.parse(localStorage.getItem('currentUser'))
+  },
+  token() {
+    return localStorage.token
   },
 }

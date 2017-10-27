@@ -1,0 +1,9 @@
+.btn-loader {
+  position: relative;
+
+  .vue-simple-spinner {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+}
