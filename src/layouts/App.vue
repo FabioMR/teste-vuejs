@@ -6,7 +6,8 @@
       <sidenav class="col"/>
 
       <main class="col wrapper">
-        <slot/>
+        <loader v-if="loading" size="big" class="main-loader"></loader>
+        <slot></slot>
       </main>
     </div>
   </div>
@@ -15,10 +16,15 @@
 <script>
   import Navbar from './Navbar'
   import Sidenav from './Sidenav'
+  import Loader from 'vue-simple-spinner'
 
   export default {
-    components: { Navbar, Sidenav },
-    props: ['title'],
+    components: {
+      Navbar,
+      Sidenav,
+      Loader,
+    },
+    props: ['title', 'loading'],
   }
 </script>
 

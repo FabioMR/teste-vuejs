@@ -6,7 +6,8 @@ import PasswordNew from '@/pages/PasswordNew'
 import Home from '@/pages/Home'
 import PasswordEdit from '@/pages/PasswordEdit'
 import AdminIndex from '@/pages/AdminIndex'
-import ContactIndex from '@/pages/ContactIndex'
+import CityIndex from '@/pages/CityIndex'
+import ReportIndex from '@/pages/ReportIndex'
 
 Vue.use(Router)
 
@@ -17,7 +18,8 @@ const router = new Router({
     { path: '/', name: 'Home', component: Home },
     { path: '/alterar-senha', name: 'PasswordEdit', component: PasswordEdit },
     { path: '/administradores', name: 'AdminIndex', component: AdminIndex },
-    { path: '/contatos', name: 'ContactIndex', component: ContactIndex },
+    { path: '/cidades', name: 'CityIndex', component: CityIndex },
+    { path: '/problemas-reportados', name: 'ReportIndex', component: ReportIndex },
   ]
 })
 

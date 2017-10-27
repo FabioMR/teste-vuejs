@@ -50,16 +50,14 @@
     methods: {
       login() {
         this.loading = true
-        API.post('sessions', {email: this.email, password: this.password})
-          .then(response => {
-            this.loading = false
-            Auth.login(response.data.user, response.data.user_token)
-            this.$router.replace({ name: 'Home' })
-          })
-          .catch(error => {
-            this.loading = false
-            this.error = error.response.data.error
-          })
+        API.post('sessions', {email: this.email, password: this.password}).then(response => {
+          this.loading = false
+          Auth.login(response.data.user, response.data.user_token)
+          this.$router.replace({ name: 'Home' })
+        }).catch(error => {
+          this.loading = false
+          this.error = error.response.data.error
+        })
       },
       onFocus() {
         this.error = null

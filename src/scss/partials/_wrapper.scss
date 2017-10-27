@@ -2,4 +2,11 @@
   @extend .pt-3;
   height: calc(100vh - 56px);
   overflow-y: scroll;
+
+  .main-loader {
+    @extend .h-100;
+    @extend .d-flex;
+    @extend .align-items-center;
+    margin-top: -1rem;
+  }
 }

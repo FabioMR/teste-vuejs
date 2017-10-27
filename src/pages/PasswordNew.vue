@@ -51,15 +51,13 @@
     methods: {
       logout() {
         this.loading = true
-        API.post('passwords', {email: this.email})
-          .then(response => {
-            this.loading = false
-            this.showAlert = true
-          })
-          .catch(error => {
-            this.loading = false
-            this.error = error.response.data.error
-          })
+        API.post('passwords', {email: this.email}).then(response => {
+          this.loading = false
+          this.showAlert = true
+        }).catch(error => {
+          this.loading = false
+          this.error = error.response.data.error
+        })
       },
       onFocus() {
         this.error = null
