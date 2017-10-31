@@ -33,12 +33,7 @@
 
 <script>
   import Auth from '@/helpers/auth'
-  import Loader from 'vue-simple-spinner'
-
   export default {
-    components: {
-      Loader
-    },
     data() {
       return {
         loading: false,

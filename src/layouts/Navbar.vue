@@ -18,8 +18,6 @@
 </template>
 
 <script>
-  import Auth from '@/helpers/auth'
-
   export default {
     props: ['title'],
     data() {

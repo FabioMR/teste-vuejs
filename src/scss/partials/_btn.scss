@@ -3,7 +3,11 @@
 
   .vue-simple-spinner {
     position: absolute;
-    top: 16px;
+    top: 10px;
     right: 16px;
+  }
+
+  &.btn-lg .vue-simple-spinner {
+    top: 16px;
   }
 }

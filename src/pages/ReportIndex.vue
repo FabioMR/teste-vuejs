@@ -1,6 +1,6 @@
 <template>
   <app-layout title="Problemas reportados" :loading="loading">
-    <a href class="btn btn-secondary mb-3">Adicionar</a>
+    <router-link class="btn btn-secondary mb-3" :to="{ name: 'ReportNew' }">Reportar</router-link>
 
     <table v-if="reports.length" class="table table-bordered table-striped table-hover table-responsive">
       <thead>

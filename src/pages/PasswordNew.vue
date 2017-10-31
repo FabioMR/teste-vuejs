@@ -33,12 +33,10 @@
 
 <script>
   import ModalAlert from '@/components/ModalAlert'
-  import Loader from 'vue-simple-spinner'
 
   export default {
     components: {
       ModalAlert,
-      Loader,
     },
     data() {
       return {

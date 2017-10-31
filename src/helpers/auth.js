@@ -17,3 +17,6 @@ export default {
     return localStorage.token
   },
 }
+
+import Auth from './auth'
+global.Auth = Auth
