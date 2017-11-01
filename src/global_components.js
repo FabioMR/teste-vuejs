@@ -1,5 +1,3 @@
-import Vue from 'vue'
-
 import LoginLayout from './layouts/Login'
 Vue.component('login-layout', LoginLayout)
 

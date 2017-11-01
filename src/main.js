@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import router from './router'
 
+global.Vue = Vue
+
 require('./global_components')
 require('./libs')
 require('./api')
